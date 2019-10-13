@@ -23,10 +23,10 @@ java -jar agent-server.jar -port 1024 -password 123456
 usage: options  
  -help     &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;    Help  
  -password \<arg>  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;    X-Server password（对应的agent-server 的密码）  
- -server_ip \<arg>  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;   X-Server ip （对应的agent-server IP地址）  
+ -server_ip \<arg>  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;   X-Server ip （对应的agent-server IP地址）  
  -server_port \<arg>   &ensp;&ensp;&ensp;&ensp;&ensp;  X-Server port （对应的agent-server 端口）  
  -remote_port \<arg>  &ensp;&ensp;&ensp;&ensp;  proxy server remote port（本地需要进行穿透的服务在agent-server映射的端口）  
- -proxy_ip \<arg>     &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;  proxy server ip （本地需要进行穿透的服务的IP地址）  
+ -proxy_ip \<arg>     &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;  proxy server ip （本地需要进行穿透的服务的IP地址）  
  -proxy_port \<arg>    &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;  proxy server port （本地需要进行穿透的服务的端口）  
  
 **示例：**
