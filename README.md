@@ -6,7 +6,7 @@ netagent是一个内网穿透工具，本项目是基于netty实现，可以实�
 
 **1. 在具有公网IP的服务器上运行agent-server，可选参数选项如下：**
 
-    usage: options  
+   usage: options  
      -help     &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;      Help  
      -password \<arg>  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;  X-Server password（默认：123456）  
      -port \<arg>      &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;  X-Server port（默认：1024）  
