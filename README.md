@@ -4,7 +4,7 @@ netagent是一个内网穿透工具，本项目是基于netty实现，可以实�
 
 ## 使用说明
 
-1. 在具有公网IP的服务器上运行agent-server，可选参数选项如下：
+**1. 在具有公网IP的服务器上运行agent-server，可选参数选项如下：**
 
     usage: options  
      -help     &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;      Help  
@@ -18,7 +18,7 @@ netagent是一个内网穿透工具，本项目是基于netty实现，可以实�
 java -jar agent-server.jar -port 1024 -password 123456 
 ```
 
-2. 在任意内网主机，或者自己的电脑本地运行agent-client，可选参数如下：  
+**2. 在任意内网主机，或者自己的电脑本地运行agent-client，可选参数如下:**  
 
 usage: options  
  -help     &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;    Help  
