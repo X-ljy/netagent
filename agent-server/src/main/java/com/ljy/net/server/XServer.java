@@ -4,7 +4,6 @@ import com.ljy.net.server.agent.TcpAgent;
 import com.ljy.net.server.codec.AgentMessageDecoder;
 import com.ljy.net.server.codec.AgentMessageEncoder;
 import com.ljy.net.server.handler.ServerHandler;
-import io.netty.channel.Channel;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.handler.codec.LengthFieldBasedFrameDecoder;
@@ -26,27 +25,27 @@ public class XServer {
         options.addOption("password", true, "X-Server password");
 
         CommandLineParser parser = new DefaultParser();
-        CommandLine cmd = parser.parse(options,args);
+        CommandLine cmd = parser.parse(options, args);
 
-        if(cmd.hasOption("help")){
+        if (cmd.hasOption("help")) {
             //输出提示信息
             HelpFormatter formatter = new HelpFormatter();
             formatter.printHelp("options", options);
-        }else {
+        } else {
             //获取命令行参数，并设置默认值
-            int port = Integer.parseInt(cmd.getOptionValue("port","1024"));
-            String password = cmd.getOptionValue("password","123456");
+            int port = Integer.parseInt(cmd.getOptionValue("port", "1024"));
+            String password = cmd.getOptionValue("password", "123456");
 
             TcpAgent tcpAgentServer = new TcpAgent();
             tcpAgentServer.bind(port, new ChannelInitializer<SocketChannel>() {
                 @Override
                 protected void initChannel(SocketChannel socketChannel) throws Exception {
                     socketChannel.pipeline().addLast(
-                        new LengthFieldBasedFrameDecoder(Integer.MAX_VALUE,0,4,0,4),
-                        new AgentMessageDecoder(),
-                        new AgentMessageEncoder(),
-                        new IdleStateHandler(60,30,0),
-                        new ServerHandler(password)
+                            new LengthFieldBasedFrameDecoder(Integer.MAX_VALUE, 0, 4, 0, 4),
+                            new AgentMessageDecoder(),
+                            new AgentMessageEncoder(),
+                            new IdleStateHandler(60, 30, 0),
+                            new ServerHandler(password)
                     );
                 }
             });
