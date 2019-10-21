@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/agent-client/agent-client.iml" filepath="$PROJECT_DIR$/agent-client/agent-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agent-server/agent-server.iml" filepath="$PROJECT_DIR$/agent-server/agent-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agent-server/agentserver.iml" filepath="$PROJECT_DIR$/agent-server/agentserver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/learn-spring.iml" filepath="$PROJECT_DIR$/learn-spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/netagent.iml" filepath="$PROJECT_DIR$/netagent.iml" />
+    </modules>
+  </component>
+</project>
