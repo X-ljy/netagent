@@ -15,7 +15,9 @@ netagent是一个内网穿透工具，本项目是基于netty实现，可以实�
 **示例：**
 
 ```sh
-java -jar agent-server.jar -port 1024 -password 123456 
+java -jar agent-server.jar 
+                  -port 1024 
+                  -password 123456 
 ```
 
 **2. 在任意内网主机，或者自己的电脑本地运行agent-client，可选参数如下:**  
@@ -32,5 +34,11 @@ usage: options
 **示例：**
 
 ```sh
-java -jar agent-client.jar -server_ip x.x.x.x -server_port 1024 -password 123456 -proxy_ip 127.0.0.1 -proxy_port 8080 -remote_port 8080
+java -jar agent-client.jar 
+            -server_ip x.x.x.x 
+            -server_port 1024 
+            -password 123456 
+            -proxy_ip 127.0.0.1 
+            -proxy_port 8080 
+            -remote_port 8080
 ```
