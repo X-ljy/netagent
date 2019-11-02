@@ -12,7 +12,7 @@
         <dependency>
             <groupId>io.netty</groupId>
             <artifactId>netty-all</artifactId>
-            <version>4.1.33.Final</version>
+            <version>4.1.42.Final</version>
         </dependency>
 
         <!--可以帮助程序去解析传递给程序的命令行参数-->
